@@ -1,0 +1,40 @@
+.tipo-usuario-page { min-height: calc(100vh - var(--altura-header)); }
+.tipo-usuario-form-section { min-height: 330px; padding: 36px 24px 42px; background: var(--cor-fundo); }
+.tipo-usuario-titulo-secao { width: fit-content; margin: 0 auto 30px; color: var(--cor-texto); font-size: 15px; font-weight: 700; text-align: center; text-transform: uppercase; }
+.tipo-usuario-titulo-secao::after { display: block; width: 76px; height: 1px; margin: 9px auto 0; background: currentColor; content: ""; }
+.tipo-usuario-form-conteudo { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; width: min(850px, 100%); min-height: 225px; margin: 0 auto; }
+.tipo-usuario-ilustracao { position: relative; width: 310px; height: 180px; justify-self: center; }
+.tipo-usuario-janela { position: absolute; top: 8px; left: 8px; width: 220px; height: 145px; border: 1.5px solid var(--cor-secundaria); border-radius: 3px; background: #fff; }
+.tipo-usuario-janela::before { position: absolute; top: 9px; left: 0; width: 100%; border-top: 1px solid var(--cor-secundaria); content: ""; }
+.tipo-usuario-janela span { position: relative; z-index: 1; display: inline-block; width: 6px; height: 6px; margin: 1px 0 0 4px; border-radius: 50%; background: var(--cor-secundaria); }
+.tipo-usuario-janela i { display: block; width: 58%; height: 5px; margin: 9px auto; border-radius: 8px; background: #dedede; }
+.tipo-usuario-janela i:first-of-type { margin-top: 30px; width: 38%; }
+.tipo-usuario-avatar { position: absolute; right: 28px; bottom: 0; width: 102px; height: 102px; overflow: hidden; border: 1px solid var(--cor-secundaria); border-radius: 50%; background: #fff; }
+.tipo-usuario-rosto { position: absolute; top: 23px; left: 34px; width: 28px; height: 32px; border-radius: 45% 45% 48% 48%; background: #a66e74; }
+.tipo-usuario-cabelo { position: absolute; z-index: 1; top: 17px; left: 32px; width: 34px; height: 16px; border-radius: 50% 50% 25% 25%; background: #29283b; }
+.tipo-usuario-corpo { position: absolute; bottom: -15px; left: 24px; width: 54px; height: 55px; border-radius: 16px 16px 0 0; background: var(--cor-primaria); }
+.tipo-usuario-mais { position: absolute; right: 23px; bottom: 61px; display: grid; width: 27px; height: 27px; place-items: center; border-radius: 50%; background: var(--cor-primaria); color: #fff; font-size: 23px; line-height: 1; }
+.tipo-usuario-form { display: flex; flex-direction: column; gap: 12px; width: min(360px, 100%); justify-self: center; }
+.tipo-usuario-form .campo { width: 100%; border: 0; border-bottom: 1px solid #777; border-radius: 0; padding: 8px 10px; color: var(--cor-texto); }
+.tipo-usuario-form .botao { width: 100%; min-height: 42px; }
+.tipo-usuario-cancelar { border: 0; background: transparent; color: var(--cor-secundaria); cursor: pointer; }
+.tipo-usuario-mensagem { color: var(--cor-primaria-escura); font-size: 14px; }
+.tipo-usuario-lista { min-height: 280px; padding: 34px 24px 56px; background: var(--cor-primaria); color: #fff; }
+.tipo-usuario-lista .tipo-usuario-titulo-secao { margin-bottom: 28px; color: #fff; font-size: 14px; }
+.tipo-usuario-tabela-wrap { width: min(780px, 100%); margin: 0 auto; overflow-x: auto; }
+.tipo-usuario-tabela { width: 100%; border-collapse: collapse; color: #fff; font-size: 14px; text-align: center; }
+.tipo-usuario-tabela th, .tipo-usuario-tabela td { padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,.65); }
+.tipo-usuario-tabela th:first-child, .tipo-usuario-tabela td:first-child { width: 75%; text-align: center; }
+.tipo-usuario-tabela th { font-weight: 600; }
+.tipo-usuario-acao { display: inline-grid; width: 32px; height: 32px; place-items: center; border: 0; border-radius: 4px; background: transparent; cursor: pointer; }
+.tipo-usuario-acao:hover, .tipo-usuario-acao:focus-visible { background: rgba(255,255,255,.16); }
+.tipo-usuario-acao img { width: 18px; height: 18px; filter: brightness(0) invert(1); }
+.tipo-usuario-acao:focus-visible, .tipo-usuario-cancelar:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+@media (max-width: 680px) {
+  .tipo-usuario-form-section { padding: 32px 20px; }
+  .tipo-usuario-form-conteudo { grid-template-columns: 1fr; gap: 24px; }
+  .tipo-usuario-ilustracao { transform: scale(.88); }
+  .tipo-usuario-form { width: min(420px, 100%); }
+  .tipo-usuario-lista { padding-inline: 12px; }
+  .tipo-usuario-tabela { min-width: 440px; }
+}

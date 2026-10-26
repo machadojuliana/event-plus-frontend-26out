@@ -1,0 +1,336 @@
+.tipo-evento-page {
+    min-height: calc(100vh - var(--altura-header));
+}
+
+.tipo-evento-form-section {
+    min-height: 330px;
+    padding: 36px 24px 42px;
+    background: var(--cor-fundo);
+}
+
+.tipo-evento-titulo-secao {
+    width: fit-content;
+    margin: 0 auto 30px;
+    color: var(--cor-texto);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tipo-evento-titulo-secao::after {
+    display: block;
+    width: 76px;
+    height: 1px;
+    margin: 9px auto 0;
+    background: var(--cor-primaria);
+    content: "";
+}
+
+.tipo-evento-form-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 48px;
+    width: min(850px, 100%);
+    min-height: 225px;
+    margin: 0 auto;
+}
+
+.tipo-evento-ilustracao {
+    position: relative;
+    width: 330px;
+    height: 190px;
+    justify-self: center;
+}
+
+.tipo-evento-monitor {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    width: 230px;
+    height: 150px;
+}
+
+.tipo-evento-tela {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    height: 132px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 26px 36px;
+    border: 9px solid #38364d;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.tipo-evento-tela::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 22%;
+    background: #f0f0f0;
+    content: "";
+}
+
+.tipo-evento-tela i {
+    position: relative;
+    display: block;
+    width: 85%;
+    height: 5px;
+    margin-left: auto;
+    border-radius: 6px;
+    background: #e2e2e2;
+}
+
+.tipo-evento-tela i:nth-child(2) {
+    width: 58%;
+}
+
+.tipo-evento-tela i:nth-child(3) {
+    width: 72%;
+}
+
+.tipo-evento-tela i:nth-child(4) {
+    width: 48%;
+}
+
+.tipo-evento-base {
+    width: 225px;
+    height: 14px;
+    margin: 0 auto;
+    border-radius: 0 0 6px 6px;
+    background: #c9c9c9;
+}
+
+.tipo-evento-base::after {
+    display: block;
+    width: 70px;
+    height: 14px;
+    margin: 14px auto 0;
+    background: #e2e2e2;
+    clip-path: polygon(18% 0, 82% 0, 100% 100%, 0 100%);
+    content: "";
+}
+
+.tipo-evento-pessoa {
+    position: absolute;
+    z-index: 2;
+    bottom: 9px;
+    display: block;
+    width: 28px;
+    height: 82px;
+}
+
+.tipo-evento-pessoa i {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 15px;
+    height: 17px;
+    border-radius: 50%;
+    background: #e6a9a3;
+}
+
+.tipo-evento-pessoa b {
+    position: absolute;
+    top: 20px;
+    left: 2px;
+    width: 25px;
+    height: 39px;
+    border-radius: 9px 9px 3px 3px;
+    background: var(--cor-primaria);
+}
+
+.tipo-evento-pessoa::before,
+.tipo-evento-pessoa::after {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 8px;
+    height: 29px;
+    background: #353447;
+    content: "";
+}
+
+.tipo-evento-pessoa::before {
+    left: 5px;
+    transform: rotate(3deg);
+}
+
+.tipo-evento-pessoa::after {
+    right: 3px;
+    transform: rotate(-3deg);
+}
+
+.tipo-evento-pessoa-um {
+    left: 4px;
+}
+
+.tipo-evento-pessoa-um b {
+    transform: rotate(9deg);
+}
+
+.tipo-evento-pessoa-dois {
+    right: 28px;
+    bottom: 8px;
+    transform: scale(.88);
+}
+
+.tipo-evento-pessoa-dois b {
+    background: #38364d;
+}
+
+.tipo-evento-mais {
+    position: absolute;
+    z-index: 3;
+    top: 67px;
+    left: 43px;
+    display: grid;
+    width: 25px;
+    height: 25px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--cor-primaria);
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.tipo-evento-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: min(360px, 100%);
+    justify-self: center;
+}
+
+.tipo-evento-form .campo {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #777;
+    border-radius: 0;
+    padding: 8px 10px;
+    color: var(--cor-texto);
+}
+
+.tipo-evento-form .botao {
+    width: 100%;
+    min-height: 42px;
+}
+
+.tipo-evento-cancelar {
+    border: 0;
+    background: transparent;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+.tipo-evento-mensagem {
+    color: var(--cor-primaria-escura);
+    font-size: 14px;
+}
+
+.tipo-evento-lista {
+    min-height: 280px;
+    padding: 34px 24px 56px;
+    background: var(--cor-primaria);
+    color: #fff;
+}
+
+.tipo-evento-lista .tipo-evento-titulo-secao {
+    margin-bottom: 28px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.tipo-evento-lista .tipo-evento-titulo-secao::after {
+    background: #fff;
+}
+
+.tipo-evento-tabela-wrap {
+    width: min(780px, 100%);
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.tipo-evento-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.tipo-evento-tabela th,
+.tipo-evento-tabela td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, .65);
+}
+
+.tipo-evento-tabela th:first-child,
+.tipo-evento-tabela td:first-child {
+    width: 75%;
+}
+
+.tipo-evento-tabela th {
+    font-weight: 600;
+}
+
+.tipo-evento-acao {
+    display: inline-grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.tipo-evento-acao:hover,
+.tipo-evento-acao:focus-visible {
+    background: rgba(255, 255, 255, .16);
+}
+
+.tipo-evento-acao img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+.tipo-evento-acao:focus-visible,
+.tipo-evento-cancelar:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+@media (max-width: 680px) {
+    .tipo-evento-form-section {
+        padding: 32px 20px;
+    }
+
+    .tipo-evento-form-conteudo {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .tipo-evento-ilustracao {
+        transform: scale(.88);
+    }
+
+    .tipo-evento-form {
+        width: min(420px, 100%);
+    }
+
+    .tipo-evento-lista {
+        padding-inline: 12px;
+    }
+
+    .tipo-evento-tabela {
+        min-width: 440px;
+    }
+}
